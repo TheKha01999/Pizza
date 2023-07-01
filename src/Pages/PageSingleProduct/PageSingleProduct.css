@@ -1,0 +1,166 @@
+.SingleProduct {
+  padding: 4.8rem 0;
+  background-color: #feeaea;
+}
+
+.grid-single {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  column-gap: 3.2rem;
+}
+
+.picture-chain {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1.2rem;
+  margin-top: 1.6rem;
+}
+
+.picture-chain img {
+  width: 100%;
+
+}
+
+
+.SingleProduct-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.grid-info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 3.2rem;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.SingleProduct-heading {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.SingleProduct-prices {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.SingleProduct-pricing {
+  font-size: 3.2rem;
+}
+
+.SingleProduct-btn {
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #f02b2f;
+  border: none;
+  padding: 1.2rem 1.6rem;
+  border-radius: 0.8rem;
+}
+
+
+#root .picture-main div:nth-child(3) {
+  top: 0 !important;
+  left: 0% !important;
+  margin: 0 !important;
+  z-index: 0 !important;
+}
+
+/*////////////*/
+.SingleProduct-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: .8rem 0;
+}
+
+.Single-service-box {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  font-size: 1.6rem;
+  align-items: center;
+  column-gap: 1.2rem;
+}
+
+.Single-service-box:nth-child(2) {
+  justify-self: center;
+}
+
+.Single-service-box:nth-child(3) {
+  justify-self: end;
+}
+
+.Single-service-box img {
+  width: 4rem;
+}
+
+.Single-service-box div {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
+
+.Single-service-box div p {
+  margin: 0;
+}
+
+.Single-service-box div p:first-child {
+  margin-bottom: 0.2rem;
+}
+
+/*Currency*/
+.currency {
+  font-size: 2.4rem;
+}
+
+@media (max-width: 62em) {
+  .grid-info {
+    font-size: 1.8rem;
+  }
+
+  .SingleProduct-prices {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 56em) {
+  .grid-single {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 6.4rem;
+  }
+
+
+}
+
+@media (max-width: 48em) {
+  .grid-single {
+    grid-template-columns: 1fr;
+  }
+
+  .Single-service-box:nth-child(2) {
+    justify-self: stretch;
+  }
+
+  .Single-service-box:nth-child(3) {
+    justify-self: stretch;
+  }
+
+
+}
+
+@media (max-width: 36em) {
+
+  .grid-single {
+    row-gap: 3.2rem;
+  }
+
+  .Single-service-box:nth-child(2) {
+    justify-self: center;
+  }
+
+  .Single-service-box:nth-child(3) {
+    justify-self: end;
+  }
+}

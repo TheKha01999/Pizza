@@ -1,0 +1,160 @@
+.pagecart {
+  padding: 4.8rem 0;
+  background-color: #feeaea;
+  min-height: 40vh;
+}
+
+.grid-pagecart {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 4.8rem;
+}
+
+.pagecart-left {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.pagecart-right {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.pagecart-left img {
+  width: 50%;
+}
+
+.pagecart-prices-prices {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.pagecart-heading {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  font-weight: 700;
+  padding-top: 1.2rem;
+}
+
+.pagecart-paybill {
+  text-align: right;
+  margin-top: 4.8rem;
+}
+
+.pagecart-bill {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 3.6rem;
+}
+
+.pagecart-bill span {
+  font-size: 1.6rem;
+}
+
+.pagecart-btn {
+  border: none;
+  background-color: #f02b2f;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  --bs-btn-active-bg: #d8272a;
+  --bs-btn-hover-bg: #d8272a;
+}
+
+.continue-shop:link,
+.continue-shop:visited {
+  text-decoration: none;
+  background-color: #f02b2f;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.8rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-right: .8rem;
+}
+
+.continue-shop:active,
+.continue-shop:hover {
+  background-color: #d8272a;
+}
+
+.pagecart-pricing {
+  font-size: 2.4rem;
+}
+
+.pagecart-pricing span {
+  font-size: 1.8rem;
+}
+
+.pagecart-trash {
+  font-size: 2.4rem;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+
+
+/*Accordion*/
+.Question-accordion {
+  margin-top: 9.6rem;
+}
+
+
+.Question-accordion .accordion-item {
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.Question-accordion .accordion-item .accordion-button {
+  font-size: 1.8rem;
+  background-color: #FFFAF7;
+  font-weight: 500;
+  color: #555;
+}
+
+.Question-accordion .accordion-body {
+  background-color: #fff;
+  line-height: 1.4;
+  color: #555;
+  font-size: 1.6rem;
+}
+
+
+@media (max-width: 48em) {
+  .pagecart-heading {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 36em) {
+  .pagecart-left {
+    display: block;
+  }
+
+  .pagecart-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4.8rem auto;
+    gap: 2.4rem;
+  }
+
+  .pagecart-prices {
+    grid-column: span 2;
+  }
+
+  .pagecart-heading {
+    padding: 0;
+    margin-top: 2.4rem;
+  }
+
+  .pagecart-trash {
+    justify-self: center;
+    margin: 0;
+  }
+
+  .pagecart-left img {
+    width: 80%;
+  }
+}

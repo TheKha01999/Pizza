@@ -1,0 +1,182 @@
+.page-products {
+  padding: 4.8rem 0;
+  background-color: #feeaea;
+}
+
+.head-page {
+  padding: 1.6rem 1.6rem;
+  border-radius: 1.2rem;
+  gap: 2.4rem;
+  font-size: 1.8rem;
+  color: #333;
+  background-color: #fff8f5;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.2rem;
+}
+
+.head-icon:link,
+.head-icon:visited {
+  text-decoration: none;
+  color: #333;
+}
+
+.head-icon:active,
+.head-icon:hover {
+
+  color: #f02b2f;
+}
+
+.head-separate,
+.head-name {
+  margin: 0;
+}
+
+.grid-4-col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 17.2rem 17.2rem;
+  grid-template-rows: 1fr 1fr;
+
+  gap: 1.6rem;
+  padding: 1.6rem;
+  background-color: #fff8f5;
+  ;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+.page-products .swiper-button-prev,
+.page-products .swiper-button-next {
+  color: #f02b2f;
+  background: #fff;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.selection-bar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  font-size: 1.8rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  align-self: center;
+  background-color: #fff8f5;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+}
+
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.filter-bar .form-select {
+  width: 12rem;
+  font-size: 1.8rem;
+  border: 1px solid #ddd;
+  border-radius: 0.8rem;
+}
+
+.button-bar {
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.button-bar a {
+  padding: 0.8rem 1.6rem;
+  border: none;
+  color: #fff;
+  background-color: #f02b2f;
+  border-radius: 0.8rem;
+  text-decoration: none;
+}
+
+.layout-bar {
+  justify-self: end;
+  align-self: center;
+  display: flex;
+  gap: 0.2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 62em) {
+
+  .page-products .swiper-button-prev,
+  .page-products .swiper-button-next {
+    height: 7rem;
+    width: 7rem;
+  }
+}
+
+@media (max-width: 48em) {
+
+  .page-products .swiper-button-prev,
+  .page-products .swiper-button-next {
+    height: 7rem;
+    width: 7rem;
+  }
+}
+
+@media (max-width: 39em) {
+  .layout-bar {
+    display: none;
+  }
+
+  .grid-4-col {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto;
+
+  }
+
+  .gallery-item {
+    grid-column: span 2;
+  }
+
+  .gallery-item:nth-child(7) {
+    grid-column: span 3;
+  }
+
+  .gallery-item:nth-child(8) {
+    grid-column: span 3;
+  }
+
+  .selection-bar {
+    grid-template-columns: 1fr;
+    row-gap: 2.4rem;
+  }
+
+  .filter-bar .form-select {
+    width: 100%;
+  }
+
+  .page-products .swiper-button-prev,
+  .page-products .swiper-button-next {
+    height: 6.5rem;
+    width: 6.5rem;
+  }
+
+  .button-bar a {
+    padding: 0.8rem 0.6rem;
+    font-size: 1.6rem;
+  }
+}

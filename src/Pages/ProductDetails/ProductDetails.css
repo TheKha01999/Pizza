@@ -1,0 +1,171 @@
+.ProductDetails {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  display: none;
+
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.ProductsDetails-box {
+  background-color: #fee8de;
+  width: 100rem;
+  height: 52rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  position: relative;
+  align-items: center;
+}
+
+.ProductDetails-img,
+.ProductsDetails-info {
+  padding: 3.2rem 2.4rem 3.2rem 2.4rem;
+}
+
+.ProductDetails-img img {
+  width: 100%;
+}
+
+.ProductDetails-icon {
+  position: absolute;
+  top: -1.8rem;
+  right: -3.2rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.ProductDetails-icon:hover {
+  color: #f02b2f;
+
+}
+
+
+.Details-heading {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+.Details-info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 3.2rem;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+
+.Details-prices {
+  padding: 2.4rem 0;
+  border-top: 1px red solid;
+  border-bottom: 1px red solid;
+  margin-bottom: 1.6rem;
+}
+
+.quantity {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.quantity .input-group {
+  width: 16rem;
+  flex-wrap: nowrap;
+  background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.quantity .input-group .form-control {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  text-align: center;
+  border: 1px solid #fff;
+}
+
+.quantity .btn {
+  font-size: 1.8rem;
+  width: 4.8rem;
+  font-weight: 700;
+  border: 1px solid #fff;
+  --bs-btn-active-bg: #d8272a;
+}
+
+.quantity .btn:hover {
+  border: #f02b2f;
+  color: #fff;
+  --bs-btn-hover-bg: #f02b2f;
+}
+
+.pricing {
+  font-size: 2.4rem;
+  margin-bottom: 4.8rem;
+}
+
+.pricing span {
+  font-size: 1.8rem;
+}
+
+.Details-info td,
+.Details-prices .quantity p {
+  border: none;
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
+
+.Details-button .btn {
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #f02b2f;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  --bs-btn-active-bg: #d8272a;
+  width: 100%;
+}
+
+.isPop {
+  display: flex;
+}
+
+@media screen and (max-width: 62em) {
+  .ProductsDetails-box {
+    width: 82rem;
+    height: 50rem;
+
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .ProductsDetails-box {
+    grid-template-columns: 1fr;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .ProductsDetails-box {
+    height: 90%;
+    width: 80%;
+    position: unset;
+  }
+
+  .ProductDetails-icon {
+    position: absolute;
+    top: 1%;
+    left: 90%;
+  }
+
+}
+
+@media screen and (max-width: 48em) {
+  .ProductsDetails-box {
+    width: 85%;
+  }
+}

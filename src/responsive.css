@@ -1,0 +1,217 @@
+/*BELOW 1200px(Landscape tablets)*/
+/***********************/
+@media (max-width: 75em) {
+  html {
+    /*9px / 16px*/
+    font-size: 56.25%;
+  }
+
+  #root .header {
+    padding: 0 3.2rem;
+  }
+
+  /*Ours Products, how, meals,services*/
+  #root .section-how .container-lg .gap-support,
+  #root .section-meals .container-lg .gap-support,
+  #root .section-services .container-lg .gap-support,
+  #root .section-location .container-lg .gap-support {
+    gap: 4.8rem;
+  }
+
+  #root .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  #root .hero-heading {
+    font-size: 4.4rem;
+  }
+
+  #root .heading-tertiary {
+    font-size: 2.4rem;
+  }
+}
+
+/*Bellow 992px*/
+@media screen and (max-width: 62em) {
+  html {
+    font-size: 50%;
+  }
+
+  #root .logo-name {
+    display: none;
+  }
+
+  #root .toggle-menu {
+    display: block;
+    z-index: 7;
+  }
+
+  #root .logos img {
+    height: 2.4rem;
+  }
+
+  #root .icon {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+
+  #root .toggle-menu .icon-toggle {
+    display: block;
+  }
+
+  #root .toggle-menu .icon-close {
+    display: none;
+  }
+
+  #root .toggle-menu.active .icon-toggle {
+    display: none;
+  }
+
+  #root .toggle-menu.active .icon-close {
+    display: block;
+  }
+
+  #root .first-navbar {
+    display: none;
+  }
+
+  #root .header-nav-link:link,
+  #root .header-nav-link:visited,
+  #root .nav-link:visited,
+  #root .nav-link:link {
+    font-size: 3rem;
+  }
+
+  #root .dropdown-link:visited,
+  #root .dropdown-link:link {
+    font-size: 2.4rem;
+  }
+
+  #root .container-lg {
+    padding: 0 3.2rem;
+  }
+
+  #root .step-number {
+    font-size: 7.4rem;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  #root .hero {
+    grid-template-columns: 1fr;
+  }
+
+  #root .section-hero {
+    text-align: center;
+  }
+
+  #root .hero-img {
+    width: 50%;
+    transform: scale(1.2);
+  }
+
+  #root .bestseller-body {
+    padding: 3.2rem 3.2rem 3.2rem 3.2rem !important;
+  }
+
+  #root .hero {
+    gap: 4.8rem;
+  }
+
+  #root .services-col {
+    display: none;
+  }
+
+  #root .reasons-box {
+    margin-bottom: 6.4rem;
+    gap: 3.2rem;
+  }
+
+  #root .reasons-box:last-child {
+    margin-bottom: 0;
+  }
+
+  #root .section-location .location-left {
+    display: none;
+  }
+
+  #root .location-right {
+    gap: 4.8rem;
+  }
+
+  #root .footer .col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+    order: 3;
+    flex: 1;
+  }
+
+  #root .footer .col-6 .copy-right {
+    margin-top: 2.4rem;
+  }
+
+  #root .footer .col-4 {
+    margin-bottom: 6.4rem;
+  }
+
+  #root .section-meals .row {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 36em) {
+
+  #root .section-how,
+  #root .section-services,
+  #root .section-meals,
+  #root .section-location,
+  #root .section-testimonials {
+    padding: 8rem 0rem;
+  }
+
+  #root .footer {
+    padding: 9.6rem 0rem;
+    padding-bottom: 2.4rem;
+  }
+
+  #root .container-lg,
+  #root .header,
+  #root .hero {
+    padding: 0 1.6rem;
+  }
+
+  #root .hero-img {
+    margin-top: 1.2rem;
+    transform: scale(1.4);
+  }
+
+  #root .logos img {
+    height: 1.2rem;
+  }
+
+  #root .section-how .step-img {
+    width: 65%;
+  }
+
+  #root .section-services .reasons-box {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #root .section-services .reasons-content-box {
+    width: 100%;
+  }
+
+  #root .section-how .container-lg .row .step-img-box {
+    order: -1;
+  }
+
+  #root .section-meals .buy-icon {
+    height: 5.2rem;
+    width: 5.2rem;
+  }
+
+  #root .section-meals .text-center {
+    text-align: unset !important;
+  }
+}

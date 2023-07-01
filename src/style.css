@@ -1,0 +1,48 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 8rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #f02b2f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.gap-support {
+  gap: 6.4rem;
+}
+.col {
+  padding: 0;
+}
+
+.mb-support {
+  margin-bottom: 9.6rem;
+}
+.swal-button {
+  background-color: #f02b2f;
+}
+.swal-button:not([disabled]):hover {
+  background-color: rgba(240, 43, 46, 0.788);
+}

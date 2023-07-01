@@ -1,0 +1,159 @@
+/*- Font size system (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+ - Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128*/
+
+#f02b2f
+data-aos="fade-right"
+data-aos="fade-left"
+data-aos="fade-right"
+data-aos="flip-left"
+ data-aos="fade-down-left"
+ data-aos="fade-left"
+ data-aos="fade-up-left"
+xem lai header, xem lai popup
+
+63 48 36
+
+ const changeQty = (id, num) => {
+    const kq = cart.map((item) => {
+      if (item.id === id && !(item.qty == 1 && num == -1)) {
+        let newNum = item["qty"] + num;
+        let newprices = item.prices * item.qty;
+        return { ...item, qty: newNum, prices: newprices };
+      } else {
+        return item;
+      }
+    });
+
+    setCart(kq);
+  };
+FiFilter
+
+ngay mai: popup vs lam cai chon chuc nang o cho bam mua, vs beseller bam view all product ra trang ban hang
+ setData(newDataTradi.sort());
+    setData(newDataTradi.sort().reverse());
+    setData(newDataPrices.sort((a, b) => a - b));
+   setData(newDataPrices.sort((a, b) => b - a));
+
+
+const list = [
+    {
+      id: 1,
+      name: "Pineapple Grilled Chicken",
+      type: "Traditional Pizza",
+      prices: 5.05,
+      img: GaNuongDua,
+    },
+    {
+      id: 2,
+      name: "Cheese Pizza",
+      type: "Traditional Pizza",
+      prices: 5.05,
+      specials: "bs",
+      imgBest: sellerTradi,
+      img: PhoMai,
+    },
+    {
+      id: 3,
+      name: "Italian Sausage Pizza",
+      type: "Traditional Pizza",
+      prices: 5.05,
+      img: XucXichY,
+    },
+    {
+      id: 4,
+      name: "Ham & Mushroom",
+      type: "Traditional Pizza",
+      prices: 5.05,
+      img: ThitVaNam,
+    },
+    {
+      id: 5,
+      name: "Pizza Hawaiian",
+      type: "Traditional Pizza",
+      prices: 5.05,
+      img: Hawailian,
+    },
+    {
+      id: 6,
+      name: "Vegetable Pizza",
+      type: "Traditional Pizza",
+      prices: 5.05,
+      img: Raucu,
+    },
+    {
+      id: 7,
+      name: "Seafood Cocktail",
+      type: "Seafood Pizza",
+      prices: 5.05,
+      img: HaiSanCocktail,
+    },
+    {
+      id: 8,
+      name: "Premium Seafood",
+      type: "Seafood Pizza",
+      prices: 6.34,
+      img: HaiSanCaoCap,
+    },
+    {
+      id: 9,
+      name: "Tropical Seafood",
+      type: "Seafood Pizza",
+      prices: 6.34,
+      img: HaiSanNhietDoi,
+    },
+    {
+      id: 10,
+      name: "Shrimp Pizza",
+      type: "Seafood Pizza",
+      prices: 6.34,
+      specials: "bs",
+      imgBest: sellerSea,
+      img: TomCocktail,
+    },
+    {
+      id: 11,
+      name: "Aloha Pizza",
+      type: "Mixed Pizza",
+      prices: 5.91,
+      img: Aloha,
+    },
+    {
+      id: 12,
+      name: "Bacon Pizza",
+      type: "Mixed Pizza",
+      prices: 5.91,
+      specials: "bs",
+      imgBest: sellerMixed,
+      img: ThitXongKhoi,
+    },
+    {
+      id: 13,
+      name: "Canadian Ham",
+      type: "Mixed Pizza",
+      prices: 5.91,
+      img: ThitNguoiCanada,
+    },
+    {
+      id: 14,
+      name: "Three Flavors",
+      type: "Mixed Pizza",
+      prices: 5.91,
+      img: GaNuong3Vi,
+    },
+    {
+      id: 15,
+      name: "Special Meats",
+      type: "Mixed Pizza",
+      prices: 5.91,
+      img: Thit5loai,
+    },
+    {
+      id: 16,
+      name: "Meats and Vegetables",
+      type: "Mixed Pizza",
+      prices: 5.91,
+      img: Thit5loaiRaucu,
+    },
+  ];
